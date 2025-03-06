@@ -9,24 +9,26 @@ Table of Contents:
 
 ## Installation
 1. Clone the repository:
-   ```sh
+   ```
    git clone https://github.com/harshbargude/smartcontactmanager.git
    ```
 
-    a. Navigate to the project directory:
-  ```sh
-    cd smartcontactmanager
-  ```
-   a. Build the project using Maven:
-  ```sh
-    mvn clean install
-  ```
-   a. Run the application:
-  ```sh
-    mvn spring-boot:run
-  ```
+3. Navigate to the project directory:
+   ```
+   cd smartcontactmanager
+   ```
+
+5. Build the project using Maven:
+   ```
+   mvn clean install
+   ```
+
+7. Run the application:
+   ```
+   mvn spring-boot:run
+   ```
 ## Usage
-Once the application is running, open your browser and visit `http://localhost:8080` to access the application.
+Once the application is running, open your browser and visit `http://localhost:8081` to access the application.
 
 ## Features
 - Add new contacts
