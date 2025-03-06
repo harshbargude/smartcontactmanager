@@ -104,10 +104,6 @@ public class User implements UserDetails {
         return true;
     }
 
-    // @Override
-    // public boolean isEnabled() {
-    //     return this.enabled;
-    // }
 
     @Override
     public String getPassword() {
