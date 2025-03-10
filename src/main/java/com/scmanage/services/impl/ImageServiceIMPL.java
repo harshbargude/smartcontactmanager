@@ -28,6 +28,11 @@ public class ImageServiceIMPL implements ImageService{
 
     @Override
     public String uplodeImage(MultipartFile contactImage, String fileName) {
+
+        // Check if the file is empty
+    if (contactImage.isEmpty()) {
+        return "https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg?20200418092106"; // Set default image URL
+    }
         // Cloud me image store carneka  code   yaha hai bhi
 
         try {
@@ -43,7 +48,7 @@ public class ImageServiceIMPL implements ImageService{
             return this.getUrlFromPublicId(fileName);
         } catch (IOException e) {
             e.printStackTrace();
-            return null;
+            return "https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg?20200418092106";
         }
 
 

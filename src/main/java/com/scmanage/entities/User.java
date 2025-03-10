@@ -55,11 +55,9 @@ public class User implements UserDetails {
     @Column(nullable = false)
     @Getter(value = AccessLevel.NONE)
     private boolean enabled = true;
-
     private boolean emailVerified = false;
-
     private boolean phoneVerified = false;
-
+    
     // Self, Google, Facebook, Twitter, Linkdin, Gitthub etc...
     @Enumerated(value = EnumType.STRING)
     private Providers provider = Providers.SELF;
@@ -80,7 +78,7 @@ public class User implements UserDetails {
     public Collection<? extends GrantedAuthority> getAuthorities() {
         Collection<SimpleGrantedAuthority> roles = rolelist.stream().map(role -> new SimpleGrantedAuthority(role))
                 .collect(Collectors.toList());
-        return roles; // use whe role is in feature (role like patient, doctor etc...)
+        return roles; // use when role is in feature (role like patient, doctor etc...)
 
     }
 

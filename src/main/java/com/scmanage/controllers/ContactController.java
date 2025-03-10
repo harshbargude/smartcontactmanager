@@ -130,10 +130,10 @@ public class ContactController {
         // List<Contact> contacts = contactService.getByUser(user);
         // int pageNo = this.getContactsPage(0);
         Page<Contact> pageContacts = contactService.getByUser(user, page, size, sortingField, sortDirection);
-
+        
         model.addAttribute("pageSize", AppConstants.PAGE_SIZE);
-        // pageContacts.
-        model.addAttribute("pageContacts", pageContacts);
+        
+        model.addAttribute("pageContacts", pageContacts);   
         return "user/contacts";
         
     }

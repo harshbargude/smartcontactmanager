@@ -31,13 +31,13 @@
                             <div
                                 class=" px-1 pt-1 flex items-center flex-column flex-wrap md:flex-row space-x-3 space-y-4 md:space-y-0 pb-4 bg-white dark:bg-gray-900">
                                 <div>
+                                    <label for="table-search-user" class="sr-only">Select field</label>
                                     <select name="field" id="table-search-user"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                        <option selected>Choose a search</option>
                                         <option class="rounded" value="name">Name</option>
-                                        <option value="email">email</option>
-                                        <option value="phone">phone</option>
-                                        <option value="favorite">favorite</option>
+                                        <option value="email">Email</option>
+                                        <option value="phone">Phone</option>
+                                        <option value="favorite">Favorite</option>
                                     </select>
                                 </div>
 
@@ -121,7 +121,7 @@
                                         <a data-th-href="@{'/user/contacts/edit/[[${c.id}]]'}"
                                             class="  mx-1 w-6 h-6 font-medium text-gray-700 dark:text-gray-100 hover:underline"><i
                                                 class="fa-solid fa-pen-to-square"></i></a>
-                                        <button th:onclick="lodeContactData([[${c.id}]]);" 
+                                        <button th:onclick="lodeContactData([[${c.id}]]);"
                                             class=" mx-1 w-6 h-6 font-medium text-gray-700 dark:text-gray-100 hover:underline"><i
                                                 class="fa-solid fa-eye"></i></button>
                                     </td>
@@ -168,7 +168,7 @@
 
         </div>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script data-th-src="@{'/JS/contacts.js'}"></script> 
+        <script data-th-src="@{'/JS/contacts.js'}"></script>
         <!-- static page is directly accessible -->
         <script>
             console.log("Contact page!")

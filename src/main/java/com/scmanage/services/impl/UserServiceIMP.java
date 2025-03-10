@@ -40,7 +40,7 @@ public class UserServiceIMP implements UserService {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
 
         // set the user role
-
+        user.setEnabled(true);
         user.setRolelist(List.of(AppConstants.ROLE_USER));
         return userRepo.save(user);
     }
