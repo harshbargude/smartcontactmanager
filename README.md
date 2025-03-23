@@ -1,3 +1,5 @@
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/1u3it.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
+
 # Smart Contact Manager #
 
 A web-based application to manage your contacts efficiently. It allows users to add, update, delete, and search for contacts in a user-friendly interface. The backend is built using Spring Boot, with Thymeleaf for the frontend, Google login for authentication, and Cloudinary for image storage.
